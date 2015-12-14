@@ -1,0 +1,24 @@
+{
+  "name": "ileenhow-resume",
+  "version": "1.0.0",
+  "description": "My Resume",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^2.1.1",
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ileenhow/Resume.git"
+  },
+  "author": "ileenhow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ileenhow/Resume/issues"
+  },
+  "homepage": "https://github.com/ileenhow/Resume#readme"
+}
