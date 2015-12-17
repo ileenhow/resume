@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'colors';
+@import 'iconfont';
 
 body {
 	background-color: $white;
@@ -9,6 +10,7 @@ body {
 
 h2 {
 	padding: 20px 0;
+	color: $darkblue;
 	font-size: 2em;
 	line-height: 1.4;
 	letter-spacing: 2px;
@@ -62,14 +64,15 @@ header {
 	}
 }
 
-.skills {
-	background-color: $white;
+
+section {
+	overflow: hidden;
+	padding-bottom: 30px;
+	background-color: $silver;
 	color: $darkblue;
 }
 
 .skill-category {
-	overflow: hidden;
-	margin-bottom: 30px;
 	& > li {
 		float: left;
 		width: 280px;
@@ -110,5 +113,131 @@ header {
 	li:last-child {
 		border-bottom-left-radius: 8px;
 		border-bottom-right-radius: 8px;
+	}
+}
+
+.intern {
+	ul {
+		overflow: hidden;
+	}
+	li {
+		box-sizing: border-box;
+		float: left;
+		width: 50%;
+		padding: 50px 40px 0;
+		h3, p {
+			overflow: hidden;
+		}
+		h3 {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.intern-details {
+	font-size: 1em;
+	text-align: center;
+}
+
+.icon-tech {
+	$iconW: 80px;
+	float: left;
+	margin-right: 20px;
+	width: $iconW;
+	height: $iconW;
+	line-height: $iconW;
+	text-align: center;
+	.iconfont {
+		font-size: 64px;
+	}
+}
+
+.education {
+	h2, p {
+		margin: 0 auto;
+		width: 70%;
+	}
+	span {
+		display: inline-block;
+	}
+	p {
+		line-height: 1.8;
+	}
+	.college,
+	.en {
+		width: 14em;
+	}
+	.question {
+		margin-top: 20px;
+	}
+	.answer {
+		span {
+			text-indent: 1.7em;
+		}
+	}
+}
+
+footer {
+	overflow: hidden;
+	padding-bottom: 50px;
+	background: $green;
+	color: $darkblue;
+	text-align: center;
+	h2 {
+		font-size: 1.4em;
+	}
+	ul {
+		display: table;
+		margin: 0 auto;
+	}
+	li {
+		display: inline-block;
+		width: 240px;
+		a {
+			display: block;
+			color: $darkblue;
+			text-decoration: none;
+			.iconfont {
+				display: inline-block;
+				margin-right: 10px;
+				font-size: 48px;
+				vertical-align: middle;
+			}
+			span {
+				font-size: 2em;
+				vertical-align: middle;
+			}
+		}
+	}
+	.contact-wechat,
+	.download-pdf {
+		float: left;
+		margin-top: 20px;
+		width: 40%;
+		p {
+			margin: 30px 0;
+			font-size: 1.2em;
+		}
+	}
+	.contact-wechat {
+		margin-left: 10%;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 200px;
+		}
+	}
+	.download-pdf {
+		a {
+			display: block;
+			margin: 80px auto 0;
+			width: 200px;
+			height: 60px;
+			background-color: $darkblue;
+			color: $white;
+			font-size: 1.2em;
+			line-height: 60px;
+			text-decoration: none;
+		}
 	}
 }
