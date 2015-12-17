@@ -38,7 +38,6 @@ header {
 		display: block;
 		width: 160px;
 		margin: 0 auto;
-		border: 8px solid $white;
 		border-radius: 50%;
 	}
 	h1 {
@@ -71,6 +70,7 @@ header {
 		width: 100%;
 	}
 	header {
+		box-sizing: border-box;
 		margin-top: 0;
 		height: 100vh;
 		padding: 100px 0 0;
@@ -308,8 +308,11 @@ footer {
 
 @media only screen and (max-width: 750px) {
 	footer {
+		box-sizing: border-box;
+		padding-top: 30px;
+		height: 100vh;
 		h2 {
-			font-size: 1.1em;
+			font-size: 1em;
 		}
 		ul {
 			display: block;
@@ -319,10 +322,10 @@ footer {
 			width: 28%;
 			a {
 				.iconfont {
-					font-size: 1.5em;
+					font-size: 1.25em;
 				}
 				span {
-					font-size: 1.5em;
+					font-size: 1.25em;
 				}
 			}
 		}
